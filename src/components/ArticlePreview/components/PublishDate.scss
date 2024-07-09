@@ -1,0 +1,22 @@
+publish-date {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  & > *:nth-child(2) {
+    margin-left: 0.5rem;
+    padding-right: 0.25rem;
+    border-right: 1px solid white;
+  }
+
+  & > *:nth-child(3) {
+    margin-left: 0.25rem;
+  }
+}
