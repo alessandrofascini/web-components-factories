@@ -6,10 +6,7 @@ import {TextContent} from "./components/Content.ts";
 
 import "./ArticlePreview.scss";
 
-const AttributeName = {};
-
 export class ArticlePreview extends new CardFactory("article-preview")
-    .AttributeName(AttributeName)
     .Use(PublishDate)
     .Use(Background)
     .Use(TextContent)
@@ -22,4 +19,12 @@ export class ArticlePreview extends new CardFactory("article-preview")
         title?: string;
         description?: string;
     }>() {
+    
+    get authors(): Avatar[] {
+        return this.avatars ?? [];
+    }
+    
+    set authors(a: Avatar[]) {
+        this.avatars = a;
+    }
 }

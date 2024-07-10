@@ -63,7 +63,7 @@ export class App extends Component("wc-cards", {}, [ArticlePreview]) {
                         
                         ap.publishDate = d.publicDate;
                         ap.background = d.background;
-                        ap.avatars = d.authors;
+                        ap.authors = d.authors;
                         ap.title = d.title;
                         ap.description = d.description;
                         
