@@ -1,9 +1,14 @@
 publish-date {
+  width: fit-content;
+  height: min-content;
+
   display: inline-flex;
   flex-direction: row;
   border: 1px solid white;
   border-radius: 0.25rem;
   padding: 0.25rem;
+
+  background: #242424;
 
   svg {
     width: 1.5rem;

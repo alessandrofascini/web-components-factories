@@ -1,2 +1,45 @@
 article-preview {
+  min-width: 20rem;
+  max-width: 30rem;
+  
+  background-color: white;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+
+  publish-date {
+    position: absolute;
+    border-radius: 0.5rem;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  card-background {
+    width: 100%;
+    height: 16rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  text-content {
+    color: #1a1a1a;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem 1rem 0 1rem;
+
+    .title {
+      font-weight: bold;
+    }
+  }
+
+  stacked-avatar {
+    margin: 1rem;
+  }
 }

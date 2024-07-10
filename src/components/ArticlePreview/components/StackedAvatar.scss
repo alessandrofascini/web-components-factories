@@ -1,0 +1,18 @@
+stacked-avatar {
+  display: flex;
+
+  img {
+    object-fit: cover;
+  }
+
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    border: 1px solid white;
+
+    &:not(:first-child) {
+      margin-left: -0.25rem;
+    }
+  }
+}
