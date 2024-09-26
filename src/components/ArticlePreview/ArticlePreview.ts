@@ -11,6 +11,12 @@ export class ArticlePreview extends new CardFactory("article-preview")
     .Use(Background)
     .Use(TextContent)
     .Use(StackedAvatar)
+    .AttributeName({test: "test-attr"})
+    .Dependency({
+        define() {
+            // my other dep
+        },
+    })
     .Build<{
         publishDate: Date | number | undefined;
         background?: string;
